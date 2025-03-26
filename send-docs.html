@@ -22,49 +22,39 @@
 </head>
 
 <body>
-    <div class="position-absolute bottom-50 end-50">
-        <div class="container-fluid">
-
-        </div>
+    <!-- container geral -->
+    <div class="container">
         <p class="fs-2">Enviar Documento para a assinatura:</p>
-
-        <p>Preencha os campos abaixo e faça o upload do arquivo</p>
-
-        <p>Envie o(s) arquivo(s) do documento:</p>
-
+        
+        <p class="fs-6">Selecione arquivo(s) salvo(o) ou anexe um novo para o envio.</p>
+        
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Documentos Salvos:
         </button>
-
+        
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Meus Dcoumentos</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Meus Dcoumentos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value=""
-                                    id="firstCheckboxStretched">
-                                <label class="form-check-label stretched-link" for="firstCheckboxStretched">Documento
-                                    1</label>
+                                <input class="form-check-input me-1" type="checkbox" value=""id="firstCheckboxStretched">
+                                <label class="form-check-label stretched-link" for="firstCheckboxStretched">Documento 1</label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value=""
-                                    id="secondCheckboxStretched">
-                                <label class="form-check-label stretched-link" for="secondCheckboxStretched">Documento
-                                    1</label>
+                                <input class="form-check-input me-1" type="checkbox" value=""id="secondCheckboxStretched">
+                                <label class="form-check-label stretched-link" for="secondCheckboxStretched">Documento 2</label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value=""
-                                    id="thirdCheckboxStretched">
-                                <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Documento
-                                    3</label>
+                                <input class="form-check-input me-1" type="checkbox" value=""id="thirdCheckboxStretched">
+                                <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Documento 3</label>
                             </li>
                         </ul>
                     </div>
@@ -76,25 +66,37 @@
             </div>
         </div>
 
+        <!-- div de upload -->
+        <div class="upload-container">
+            <form id="uploadForm">
+                <label for="fileInput">
+                    <div class="upload-box" id="dropArea">
+                        <div class="upload-icon">↑</div>
+                        <div class="upload-text">Arraste o(s) arquivo(s) ou clique aqui para procurá-lo(s)</div>
+                        <div class="file-types">Envie arquivo(s) .DOC, .DOCX ou .PDF</div>
+                    </div>
+                </label>
+                <input type="file" id="fileInput" multiple accept=".doc,.docx,.pdf">
+            </form>
+        </div>
+
+        <!-- div de dados do signatario -->
+        <div class="container-dados">
+            <p class="fs-6">Preencha os campos abaixo com os dados do signatário para o envio do documento.</p>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                <input type="nome" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Celular</label>
+                <input type="celular" class="form-control" id="exampleFormControlInput1">
+            </div>
+        </div>
     </div>
-    <div class="position-absolute top-100 start-50 translate-middle">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="25" fill="currentColor"
-            class="bi bi-file-earmark-arrow-up" viewBox="0 0 16 16">
-            <path
-                d="M8.5 11.5a.5.5 0 0 1-1 0V7.707L6.354 8.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 7.707z" />
-            <path
-                d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
-        </svg>
-    </div>
-
-
-
-
-
-
-
-
-
 
 
 
