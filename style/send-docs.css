@@ -60,53 +60,33 @@ margin-bottom: 10px;
 #fileInput {
     display: none;
 }
-    
-.submit-btn {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-    
-.submit-btn:hover {
-    background-color: #0052a3;
-}
-    
-#fileList {
-    margin-top: 20px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-    
-.file-item {
-    padding: 10px 15px;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-    
-.file-item:last-child {
-    border-bottom: none;
-}
-    
-.remove-btn {
-    background: none;
-    border: none;
-    color: #cc0000;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 0 5px;
-}
+
+
 
 /* Dados */
 .mb-3 {
     width: 40%;
+}
+
+/* Enviar documento */
+.notfy {
+    text-align: end;
+}
+
+.toast-body {
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.toast-body p {
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.btn-close {
+    text-align: end;
 }
