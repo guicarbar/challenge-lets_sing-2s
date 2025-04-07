@@ -25,36 +25,42 @@
     <!-- container geral -->
     <div class="container">
         <p class="fs-2">Enviar Documento para a assinatura:</p>
-        
+
         <p class="fs-6">Selecione arquivo(s) salvo(o) ou anexe um novo para o envio.</p>
-        
+
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Documentos Salvos:
         </button>
-        
+
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Meus Dcoumentos</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Meus Dcoumentos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value=""id="firstCheckboxStretched">
-                                <label class="form-check-label stretched-link" for="firstCheckboxStretched">Documento 1</label>
+                                <input class="form-check-input me-1" type="checkbox" value=""
+                                    id="firstCheckboxStretched">
+                                <label class="form-check-label stretched-link" for="firstCheckboxStretched">Documento
+                                    1</label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value=""id="secondCheckboxStretched">
-                                <label class="form-check-label stretched-link" for="secondCheckboxStretched">Documento 2</label>
+                                <input class="form-check-input me-1" type="checkbox" value=""
+                                    id="secondCheckboxStretched">
+                                <label class="form-check-label stretched-link" for="secondCheckboxStretched">Documento
+                                    2</label>
                             </li>
                             <li class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value=""id="thirdCheckboxStretched">
-                                <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Documento 3</label>
+                                <input class="form-check-input me-1" type="checkbox" value=""
+                                    id="thirdCheckboxStretched">
+                                <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Documento
+                                    3</label>
                             </li>
                         </ul>
                     </div>
@@ -80,38 +86,50 @@
                 </label>
                 <input type="file" id="fileInput" multiple accept=".doc,.docx,.pdf">
             </form>
+
+        </div>
+    </div>
+
+    <!-- div de dados do signatario -->
+    <div class="container mt-2">
+
+        <p class="fs-6">Preencha os campos abaixo com os dados do signatário para o envio do documento.</p>
+
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control mt-5" placeholder="Email" aria-label="Email">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control mt-5" placeholder="Nome completo" aria-label="Nome completo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control mt-5" placeholder="Celular" aria-label="Celular">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control mt-5" placeholder="CPF" aria-label="CPF">
+            </div>
         </div>
 
-        <!-- div de dados do signatario -->
-        <div class="container-dados">
-            <p class="fs-6">Preencha os campos abaixo com os dados do signatário para o envio do documento.</p>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                <input type="nome" class="form-control" id="exampleFormControlInput1">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Celular</label>
-                <input type="celular" class="form-control" id="exampleFormControlInput1">
-            </div>
-        </div>
 
-            <button type="button p-3" class="btn btn-success btn-sm position-fixed bottom-0 end-0 m-5"  id="liveToastBtn">Enviar Documento</button>
-
-            <div class="toast-container position-fixed top-0 end-0 p-3">
-                <div class="toast bg-success p2 text-white" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="d-flex">
-                        <div class="toast-body">
-                            Documento enviado!
-                        </div>
-                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                            aria-label="Close"></button>
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div class="toast bg-success p2 text-white" id="liveToast" role="alert" aria-live="assertive"
+                aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        Documento enviado!
                     </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
                 </div>
             </div>
+        </div>
+
+        <div class="button m-3 float-end ">
+            <button type="button p3" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button p-3" class="btn btn-success btn-sm " id="liveToastBtn">Enviar Documento</button>
+        </div>
     </div>
 
 
@@ -121,6 +139,8 @@
     </main>
 
     <!-- Js Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="/send-docs.js"></script>
 </body>
