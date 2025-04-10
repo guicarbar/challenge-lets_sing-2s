@@ -10,25 +10,6 @@ tela mobile - iphone 12 pro - 390px x 844px
 
 /* navbar area */
 nav {
-  background-color: #fff;
-}
-
-nav > button > i {
-  font-size: 40px;
-  cursor: pointer;
-}
-
-/* menu collapse modifiers */
-.collapse-menu {
-  background-color: #6429ff;
-}
-
-
-.collapse-menu > .list-group > .list-group-item {
-  background-color: #6429ff;
-  border: none;
-  border-radius: 0px;
-  border-bottom: 1px solid #ffffff;
-  color: white;
-  text-align: end;
+  border-bottom: 1px solid #606060;
+  max-width: 100vw;
 }
