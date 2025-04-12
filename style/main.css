@@ -19,6 +19,12 @@ tela mobile - iphone 12 pro - 390px x 844px
 }
 
 
+/* geral */
+* {
+  font-family: "Proxima Nova", "Lato", sans-serif;
+}
+
+
 /* navbar area */
 /* main navbar */
 nav {
@@ -60,3 +66,6 @@ nav {
 .icons-sidebar_offcanvas {
   font-size: 1.6em;
 }
+
+
+/* main style */
