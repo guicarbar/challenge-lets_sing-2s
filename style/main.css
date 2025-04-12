@@ -56,7 +56,7 @@ nav {
 }
 
 .sidebar_offcanvas > div:first-child {
- background-color: var(--color2);
+  background-color: var(--color2);
 }
 
 .sidebar_offcanvas > div:last-child {
