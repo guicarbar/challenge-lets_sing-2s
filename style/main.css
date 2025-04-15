@@ -16,6 +16,7 @@ tela mobile - iphone 12 pro - 390px x 844px
   --color-black: #00030c;
   --color2: #343570;
   --color3: #3c3d84;
+  --color4: #4d4d9c;
 }
 
 
@@ -40,14 +41,33 @@ nav {
   font-size: 1.6em;
 }
 
-.btn_sidebar-open > i {
+.btn_sidebar-open > img {
   font-size: 1.5em;
   color: var(--color1);
+}
+
+.btn_sidebar-close {
+  border: none;
+  background-color: var(--color-white);
+}
+
+.btn_sidebar-close > img {
+  font-size: 1.5em;
+  color: var(--color1);
+  transform: rotate(180deg);
+}
+
+.btn_sidebar-close:active {
+  border-radius: 8px;
+  border: 1px solid var(--color-black);
 }
 
 /* sidebar */ 
 .sidebar_offcanvas {
   color: var(--color-white);
+  height: 100vh;
+  background-color: var(--color2);
+  overflow-x: hidden;
 }
 
 .sidebar_offcanvas-title-link {
@@ -55,17 +75,24 @@ nav {
   color: var(--color-black);
 }
 
-.sidebar_offcanvas > div:first-child {
- background-color: var(--color2);
+.sidebar_offcanvas > div.row {
+  background-color: var(--color2);
 }
 
-.sidebar_offcanvas > div:last-child {
+.sidebar_offcanvas > div.row > div:first-child {
+  max-width: 30%;
+}
+
+.sidebar_offcanvas > div.row > div:last-child {
+  max-width: 70%;
+}
+
+.sidebar_offcanvas > div.row > div.col > i {
+  font-size: 1.5em;
+}
+
+.sidebar_offcanvas > div.row > div.col:last-child {
   background-color: var(--color3);
 }
-
-.icons-sidebar_offcanvas {
-  font-size: 1.6em;
-}
-
 
 /* main style */

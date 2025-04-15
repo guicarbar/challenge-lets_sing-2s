@@ -26,7 +26,7 @@
         <img src="style/img/favicon.png" alt="LetsSing" width="48" height="48">
       </a>
       <button class="btn btn_sidebar-open p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        <i class="bi bi-layout-sidebar-inset"></i>
+        <img src="style/img/collapse.svg" alt="collapse menu" width="24" height="24">
       </button>
     </div>
 
@@ -41,36 +41,46 @@
 
   <!-- sidebar -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 70vw;">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title me-3" id="offcanvasExampleLabel"><a href="https://www.letssign.com.br/" target="_blank" class="sidebar_offcanvas-title-link">LetsSing</a></h5>
+    <div class="offcanvas-header d-flex justify-content-between">
+      <div class="d-flex align-items-center">
+        <h5 class="offcanvas-title me-3" id="offcanvasExampleLabel"><a href="https://www.letssign.com.br/" target="_blank" class="sidebar_offcanvas-title-link">LetsSing</a></h5>
       <img src="style/img/favicon.png" alt="LetsSing" width="48" height="48" onclick="goLetssing()">
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body d-flex sidebar_offcanvas p-0">
-      <!-- icons -->
-      <div class="d-flex flex-column p-4 gap-4 icons-sidebar_offcanvas">
-        <i class="bi bi-house-door"></i>
-        <i class="bi bi-file-earmark"></i>
-        <i class="bi bi-clipboard"></i>
-        <i class="bi bi-journal"></i>
-        <i class="bi bi-wifi"></i>
-        <i class="bi bi-gear"></i>
-        <i class="bi bi-headset"></i>
       </div>
-
-      <!-- navbar - sidebar -->
-      <div class="d-flex flex-column flex-grow-1 p-4 gap-4">
-        <div class="p-2">Acesso rapido</div>
-        <div class="p-2">Documentos</div>
-        <div class="p-2">Modelos</div>
-        <div class="p-2">Contatos</div>
-        <div class="p-2">Integração</div>
-        <div class="p-2">Preferências</div>
-        <div class="p-2">Ajuda</div>
+      <button type="button" class="btn_sidebar-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="style/img/collapse.svg" alt="collapse menu" width="24" height="24">
+      </button>
+    </div>
+    <div class="offcanvas-body sidebar_offcanvas p-0">
+      <div class="row">
+        <div class="col d-flex justify-content-center p-3"><i class="bi bi-house-door"></i></div>
+        <div class="col p-3">Acesso rapido</div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center p-3"><i class="bi bi-file-earmark"></i></div>
+        <div class="col p-3">Documentos</div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center p-3"><i class="bi bi-clipboard"></i></div>
+        <div class="col p-3">Modelos</div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center p-3"><i class="bi bi-journal"></i></div>
+        <div class="col p-3">Contatos</div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center p-3"><i class="bi bi-wifi"></i></div>
+        <div class="col p-3">Integração</div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center p-3"><i class="bi bi-gear"></i></div>
+        <div class="col p-3">Preferências</div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center p-3"><i class="bi bi-headset"></i></div>
+        <div class="col p-3">Ajuda</div>
       </div>
     </div>
   </div>
-
 
   <!-- main area -->
   <main>
