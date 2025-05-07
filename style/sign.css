@@ -1,0 +1,16 @@
+.documento-area {
+    height: 80vh;
+    background-color: #f8f9fa;
+    border: 2px solid #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.documento-area span{
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    transform: rotate(-30deg);
+}
