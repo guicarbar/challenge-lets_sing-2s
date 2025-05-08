@@ -78,64 +78,64 @@
         </div>
     </div>
 
-<div class="container mt-3">
-    <div class="row">
-        <!-- Documento -->
-        <div class="col-12 col-md-9 documento-area mb-3 mb-md-0">
-            <span>DOCUMENTO</span>
-        </div>
-
-        <!-- Barra lateral -->
-        <div class="col-12 col-md-3">
-            <div class="mb-2">
-                <label class="form-label">Digite seu nome completo:</label>
-                <input type="text" class="form-control" placeholder="Nome completo">
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Documento -->
+            <div class="col-12 col-md-9 documento-area mb-3 mb-md-0">
+                <span>DOCUMENTO</span>
             </div>
 
-            <div class="mb-2">
-                <label class="form-label">Digite seu CPF:</label>
-                <input type="text" class="form-control" placeholder="000.000.000-00">
+            <!-- Barra lateral -->
+            <div class="col-12 col-md-3">
+                <div class="mb-2">
+                    <label class="form-label">Digite seu nome completo:</label>
+                    <input type="text" class="form-control" placeholder="Nome completo">
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Digite seu CPF:</label>
+                    <input type="text" class="form-control" placeholder="000.000.000-00">
+                </div>
+
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="consentCheck1">
+                    <label class="form-check-label" for="consentCheck1">
+                        Visualizar todo o documento ou baixar
+                    </label>
+                </div>
+
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="consentCheck2">
+                    <label class="form-check-label" for="consentCheck2">
+                        Preencher seus dados
+                    </label>
+                </div>
+
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="consentCheck3">
+                    <label class="form-check-label" for="consentCheck3">
+                        Concordo em assinar o documento
+                    </label>
+                </div>
+
+                <!-- Assinatura -->
+                <p class="form-label mt-3">Desenhe sua assinatura ✍️</p>
+                <div class="signature-box border border-3 rounded-3 desenho-assinatura mb-2">
+                    <canvas id="signature-canvas"></canvas>
+                </div>
+
+                <button class="btn btn-outline-danger btn-sm mb-3" id="clear-button">Limpar</button>
+
+                <p class="text-center">Ou</p>
+                <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Faça o upload da sua assinatura:</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                </div>
+
+                <button class="btn btn-success w-100">Assinar</button>
             </div>
-
-            <div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" id="consentCheck1">
-                <label class="form-check-label" for="consentCheck1">
-                    Visualizar todo o documento ou baixar
-                </label>
-            </div>
-
-            <div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" id="consentCheck2">
-                <label class="form-check-label" for="consentCheck2">
-                    Preencher seus dados
-                </label>
-            </div>
-
-            <div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" id="consentCheck3">
-                <label class="form-check-label" for="consentCheck3">
-                    Concordo em assinar o documento
-                </label>
-            </div>
-
-            <!-- Assinatura -->
-            <p class="form-label mt-3">Desenhe sua assinatura ✍️</p>
-            <div class="signature-box border border-3 rounded-3 desenho-assinatura mb-2">
-                <canvas id="signature-canvas"></canvas>
-            </div>
-
-            <button class="btn btn-outline-danger btn-sm mb-3" id="clear-button">Limpar</button>
-
-            <p class="text-center">Ou</p>
-            <div class="mb-3">
-                <label for="formFileSm" class="form-label">Faça o upload da sua assinatura:</label>
-                <input class="form-control form-control-sm" id="formFileSm" type="file">
-            </div>
-
-            <button class="btn btn-success w-100">Assinar</button>
         </div>
     </div>
-</div>
 
 
     <!-- scripts -->

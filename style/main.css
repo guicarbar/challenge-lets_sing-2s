@@ -36,16 +36,16 @@ nav {
   font-size: 1.3em;
 }
 
-.userIcon_navbar > i {
+.userIcon_navbar>i {
   font-size: 1.6em;
 }
 
-.btn_sidebar-open > i {
+.btn_sidebar-open>i {
   font-size: 1.5em;
   color: var(--color1);
 }
 
-/* sidebar */ 
+/* sidebar */
 .sidebar_offcanvas {
   color: var(--color-white);
 }
@@ -55,11 +55,11 @@ nav {
   color: var(--color-black);
 }
 
-.sidebar_offcanvas > div:first-child {
+.sidebar_offcanvas>div:first-child {
   background-color: var(--color2);
 }
 
-.sidebar_offcanvas > div:last-child {
+.sidebar_offcanvas>div:last-child {
   background-color: var(--color3);
 }
 

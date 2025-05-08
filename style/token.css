@@ -1,3 +1,4 @@
+
 .purple-line {
     height: 4px;
     background-color: #6c5ce7;
@@ -32,13 +33,6 @@
     padding: 12px 20px;
     font-size: 20px;
     font-weight: bold;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .container {
