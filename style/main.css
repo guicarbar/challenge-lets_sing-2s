@@ -14,9 +14,13 @@ tela mobile - iphone 12 pro - 390px x 844px
   --color1: #b18ffe;
   --color-white: #fff;
   --color-black: #00030c;
+  --color-grayLight: #cecece;
   --color2: #343570;
   --color3: #3c3d84;
   --color4: #4d4d9c;
+  --color5: #28c5f3;
+  --color-pink: #fc5c94;
+  --color-green: #2cdc8c;
 }
 
 
@@ -43,7 +47,15 @@ nav {
 
 .btn_sidebar-open > img {
   font-size: 1.5em;
-  color: var(--color1);
+}
+
+.text_extend {
+  display: none;
+}
+
+.btn_sidebar-open:hover + .text_extend {
+  color: var(--color-grayLight);
+  display: block;
 }
 
 .btn_sidebar-close {
@@ -57,10 +69,10 @@ nav {
   transform: rotate(180deg);
 }
 
-.btn_sidebar-close:active {
-  border-radius: 8px;
-  border: 1px solid var(--color-black);
+.user_area {
+  cursor: pointer;
 }
+
 
 /* sidebar */ 
 .sidebar_offcanvas {
@@ -75,24 +87,179 @@ nav {
   color: var(--color-black);
 }
 
-.sidebar_offcanvas > div.row {
+.col_icon {
+  width: 15%;
   background-color: var(--color2);
 }
 
-.sidebar_offcanvas > div.row > div:first-child {
-  max-width: 30%;
+.col_icon > div:hover {
+  background-color: var(--color4);
+  transition: background-color 1.3s ease;
 }
 
-.sidebar_offcanvas > div.row > div:last-child {
-  max-width: 70%;
-}
-
-.sidebar_offcanvas > div.row > div.col > i {
-  font-size: 1.5em;
-}
-
-.sidebar_offcanvas > div.row > div.col:last-child {
+.col_link {
+  width: 85%;
   background-color: var(--color3);
 }
 
+.col_link > div, .col_icon > div {
+  cursor: pointer;
+}
+
+.col_link > div:hover {
+  color: var(--color5);
+  background-color: var(--color4);
+  transition: all 1.3s ease;
+}
+
+.col_link > div:first-child {
+  color: var(--color5);
+}
+
+.bg-menu {
+  background-color: var(--color4);
+  transition: background-color 1.3s ease;
+}
+
+.offcanvas-header-1 {
+  background-color: var(--color-white);
+}
+
+
 /* main style */
+.main_cards > div.d-flex > div.card {
+  width: 90%;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-grayLight) !important;
+  box-sizing: border-box;
+}
+
+.main_cards > div.d-flex > div.card > img.card-img-top, .main_cards > div.d-flex > div.card > div:first-child > img.card-img-top {
+  width: 4em;
+  height: 4em;
+}
+
+.main_cards > div.d-flex > div.card > div.card-body > h5.card-title, .main_cards > div.d-flex > div.card> div.card-body > h5.card-title  {
+  color: var(--color1);
+  font-weight: bold;
+  text-align: center;
+}
+
+.main_cards > div.d-flex > div.card > div.card-body > p.card-text, .main_cards > div.d-flex > div.card > div.card-body > p.card-text {
+  color: var(--color-grayLight);
+  text-align: center;
+}
+
+.ball-pink {
+  background-color: var(--color-pink);
+  width: 64px;
+  height: 64px;
+}
+
+.ball-green {
+  background-color: var(--color-green);
+  width: 64px;
+  height: 64px;
+}
+
+
+/* documentos recentes */
+.rec_docs {
+  height: 350px;
+}
+.rec_docs > i {
+  font-size: 2em;
+  color: var(--color-grayLight);
+}
+
+.rec_docs > div > table > thead > tr > th {
+  font-weight: bold;
+  border-right: 1px solid var(--color-grayLight);
+}
+
+.rec_docs > div > table > thead > tr > th:last-child {
+  border: none;
+}
+
+.bi-arrow-clockwise {
+  cursor: pointer;
+}
+
+
+/* footer - button to help */
+.offcanvas-end {
+  background-image: linear-gradient(180deg, var(--color3), var(--color-white));
+}
+
+footer > button {
+  background-color: var(--color4) !important;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+
+footer > button > i {
+  font-size: 2em;
+  color: var(--color-white);
+}
+
+.offcanvas-header-2 {
+  color: var(--color-white);
+}
+
+.label_help-title {
+  width: 128px;
+}
+
+.btn-close {
+  color: var(--color-white) !important;
+}
+
+.offcanvas-body-2 {
+  height: 100%;
+}
+
+.offcanvas-footer > input, .offcanvas-footer > button {
+  border: 1px solid var(--color-grayLight);
+}
+
+.offcanvas-footer > input:focus, .offcanvas-footer > button:focus {
+  outline: none;
+}
+
+
+
+
+/* face id */
+.ovo {
+  width: 300px;
+  height: 380px;
+  border: 6px solid blueviolet;
+  border-radius: 50% / 60%;
+  overflow: hidden;
+}
+
+.ovo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-area > h1, .text-area > button {
+  font-weight: bold;
+}
+
+.text-area > button {
+  color: var(--color-white);
+  background-color: var(--color1);
+}
+
+.text-area > button:hover {
+  transform: scale(1.1);
+  transition: all .3s ease;
+}
+
+.text-area > button:active {
+  transform: scale(.9);
+  transition: all .3s ease;
+}
