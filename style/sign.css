@@ -1,0 +1,53 @@
+.documento-area {
+    height: auto;
+    min-height: 50vh;
+    background-color: #f8f9fa;
+    border: 2px solid #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.documento-area span {
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    transform: rotate(-30deg);
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.desenho-assinatura {
+    height: 20vh;
+    width: 100%;
+}
+
+#signature-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    touch-action: none;
+    /* melhora em mobile */
+}
+
+/* Adaptação para mobile */
+@media (max-width: 768px) {
+.documento-area {
+    height: auto;
+    padding: 1rem;
+}
+
+.documento-area span {
+    font-size: 2.5rem;
+    transform: rotate(-20deg);
+}
+}

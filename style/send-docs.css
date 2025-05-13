@@ -4,7 +4,7 @@
 
 /* container geral */
 
-.container{
+.container {
     margin-top: 5%;
 }
 
@@ -38,33 +38,29 @@
     cursor: pointer;
     transition: all 0.3s;
 }
-    
+
 .upload-box:hover {
     border-color: #0066cc;
     background-color: #f0f7ff;
 }
-    
+
 .upload-icon {
     font-size: 48px;
     color: #666;
     margin-bottom: 20px;
 }
-    
+
 .upload-text {
     margin-bottom: 10px;
     font-size: 18px;
     color: #333;
 }
-    
+
 .file-types {
     font-size: 14px;
     color: #666;
 }
-    
+
 #fileInput {
     display: none;
 }
-
-
-
-
