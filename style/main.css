@@ -191,11 +191,16 @@ nav {
   background-image: linear-gradient(180deg, var(--color3), var(--color-white));
 }
 
+footer {
+    pointer-events: none;
+}
+
 footer > button {
   background-color: var(--color4) !important;
   width: 64px;
   height: 64px;
   cursor: pointer;
+  pointer-events: auto
 }
 
 footer > button > i {
@@ -226,8 +231,6 @@ footer > button > i {
 .offcanvas-footer > input:focus, .offcanvas-footer > button:focus {
   outline: none;
 }
-
-
 
 
 /* face id */
@@ -262,4 +265,11 @@ footer > button > i {
 .text-area > button:active {
   transform: scale(.9);
   transition: all .3s ease;
+}
+
+
+/* modal */
+.modal-header {
+  background-color: var(--color4);
+  color: var(--color-white);
 }

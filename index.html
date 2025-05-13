@@ -30,7 +30,8 @@
         <img src="style/img/favicon.png" alt="LetsSing" width="48" height="48">
       </a>
 
-      <button class="btn btn_sidebar-open p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <button class="btn btn_sidebar-open p-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <img src="style/img/collapse.svg" alt="collapse menu" width="24" height="24">
       </button>
       <p class="mb-0 text_extend">Expandir</p>
@@ -46,11 +47,13 @@
 
 
   <!-- sidebar -->
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 70vw;">
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+    style="width: 70vw;">
     <div class="offcanvas-header offcanvas-header-1 d-flex justify-content-between">
       <div class="d-flex align-items-center">
-        <h5 class="offcanvas-title me-3" id="offcanvasExampleLabel"><a href="https://www.letssign.com.br/" target="_blank" class="sidebar_offcanvas-title-link">LetsSing</a></h5>
-      <img src="style/img/favicon.png" alt="LetsSing" width="48" height="48" onclick="goLetssing()">
+        <h5 class="offcanvas-title me-3" id="offcanvasExampleLabel"><a href="https://www.letssign.com.br/"
+            target="_blank" class="sidebar_offcanvas-title-link">LetsSing</a></h5>
+        <img src="style/img/favicon.png" alt="LetsSing" width="48" height="48" onclick="goLetssing()">
       </div>
       <div class="d-flex align-items-center">
         <button type="button" class="btn_sidebar-close" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -61,24 +64,46 @@
     <div class="offcanvas-body sidebar_offcanvas d-flex flex-row p-0">
       <!-- primeira coluna - de icones -->
       <div class="d-flex flex-column align-items-center col_icon">
-        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-1 mt-3" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_link_div-1")' onmouseout='bgNavbarMenuLeave("col_link_div-1")'><i class="bi bi-house-door"></i></div>
-        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-2" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_link_div-2")' onmouseout='bgNavbarMenuLeave("col_link_div-2")'><i class="bi bi-file-earmark"></i></div>
-        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-3" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_link_div-3")' onmouseout='bgNavbarMenuLeave("col_link_div-3")'><i class="bi bi-clipboard"></i></div>
-        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-4" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_link_div-4")' onmouseout='bgNavbarMenuLeave("col_link_div-4")'><i class="bi bi-journal"></i></div>
-        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-5" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_link_div-5")' onmouseout='bgNavbarMenuLeave("col_link_div-5")'><i class="bi bi-wifi"></i></div>
-        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-6" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_link_div-6")' onmouseout='bgNavbarMenuLeave("col_link_div-6")'><i class="bi bi-gear"></i></div>
-        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-7" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_link_div-7")' onmouseout='bgNavbarMenuLeave("col_link_div-7")'><i class="bi bi-headset"></i></div>
+        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-1 mt-3" onclick="goLetssing()"
+          onmouseover='bgNavbarMenuEnter("col_link_div-1")' onmouseout='bgNavbarMenuLeave("col_link_div-1")'><i
+            class="bi bi-house-door"></i></div>
+        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-2" onclick="goLetssing()"
+          onmouseover='bgNavbarMenuEnter("col_link_div-2")' onmouseout='bgNavbarMenuLeave("col_link_div-2")'><i
+            class="bi bi-file-earmark"></i></div>
+        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-3" onclick="goLetssing()"
+          onmouseover='bgNavbarMenuEnter("col_link_div-3")' onmouseout='bgNavbarMenuLeave("col_link_div-3")'><i
+            class="bi bi-clipboard"></i></div>
+        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-4" onclick="goLetssing()"
+          onmouseover='bgNavbarMenuEnter("col_link_div-4")' onmouseout='bgNavbarMenuLeave("col_link_div-4")'><i
+            class="bi bi-journal"></i></div>
+        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-5" onclick="goLetssing()"
+          onmouseover='bgNavbarMenuEnter("col_link_div-5")' onmouseout='bgNavbarMenuLeave("col_link_div-5")'><i
+            class="bi bi-wifi"></i></div>
+        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-6" onclick="goLetssing()"
+          onmouseover='bgNavbarMenuEnter("col_link_div-6")' onmouseout='bgNavbarMenuLeave("col_link_div-6")'><i
+            class="bi bi-gear"></i></div>
+        <div class="w-100 p-3 d-flex justify-content-center col_icon_div-7" onclick="goLetssing()"
+          onmouseover='bgNavbarMenuEnter("col_link_div-7")' onmouseout='bgNavbarMenuLeave("col_link_div-7")'><i
+            class="bi bi-headset"></i></div>
       </div>
-      
+
       <!-- segunda coluna de links -->
       <div class="d-flex flex-column align-items-start col_link">
-        <div class="w-100 p-3 col_link_div-1 mt-3" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-1")' onmouseout='bgNavbarMenuLeave("col_icon_div-1")'>Acesso rapido</div> 
-        <div class="w-100 p-3 col_link_div-2" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-2")' onmouseout='bgNavbarMenuLeave("col_icon_div-2")'>Documentos</div>
-        <div class="w-100 p-3 col_link_div-3" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-3")' onmouseout='bgNavbarMenuLeave("col_icon_div-3")'>Modelos</div>
-        <div class="w-100 p-3 col_link_div-4" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-4")' onmouseout='bgNavbarMenuLeave("col_icon_div-4")'>Contatos</div>
-        <div class="w-100 p-3 col_link_div-5" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-5")' onmouseout='bgNavbarMenuLeave("col_icon_div-5")'>Integração</div>
-        <div class="w-100 p-3 col_link_div-6" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-6")' onmouseout='bgNavbarMenuLeave("col_icon_div-6")'>Preferências</div>
-        <div class="w-100 p-3 col_link_div-7" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-7")' onmouseout='bgNavbarMenuLeave("col_icon_div-7")'>Ajuda</div>
+        <div class="w-100 p-3 col_link_div-1 mt-3" onclick="goLetssing()"
+          onmouseover='bgNavbarMenuEnter("col_icon_div-1")' onmouseout='bgNavbarMenuLeave("col_icon_div-1")'>Acesso
+          rapido</div>
+        <div class="w-100 p-3 col_link_div-2" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-2")'
+          onmouseout='bgNavbarMenuLeave("col_icon_div-2")'>Documentos</div>
+        <div class="w-100 p-3 col_link_div-3" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-3")'
+          onmouseout='bgNavbarMenuLeave("col_icon_div-3")'>Modelos</div>
+        <div class="w-100 p-3 col_link_div-4" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-4")'
+          onmouseout='bgNavbarMenuLeave("col_icon_div-4")'>Contatos</div>
+        <div class="w-100 p-3 col_link_div-5" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-5")'
+          onmouseout='bgNavbarMenuLeave("col_icon_div-5")'>Integração</div>
+        <div class="w-100 p-3 col_link_div-6" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-6")'
+          onmouseout='bgNavbarMenuLeave("col_icon_div-6")'>Preferências</div>
+        <div class="w-100 p-3 col_link_div-7" onclick="goLetssing()" onmouseover='bgNavbarMenuEnter("col_icon_div-7")'
+          onmouseout='bgNavbarMenuLeave("col_icon_div-7")'>Ajuda</div>
       </div>
     </div>
   </div>
@@ -98,16 +123,16 @@
       <!-- primeira linha -->
       <div class="d-flex flex-column flex-sm-row p-4 gap-4">
         <!-- enviar docs -->
-        <div class="card p-1 border-0 rounded-0 mb-sm-0" onclick='goToDingDocFunc("")'>
+        <div class="card p-1 border-0 rounded-0 mb-sm-0" onclick='goToDingDocFunc("pages/send-docs.html")'>
           <img src="style/img/send_signature.svg" class="card-img-top m-auto">
           <div class="card-body">
             <h5 class="card-title">Enviar um documento para assinar</h5>
             <p class="card-text">Selecione um arquivo que deseja para assinar</p>
           </div>
         </div>
-        
+
         <!-- modelos -->
-        <div class="card border-0 rounded-0 mb-sm-0" onclick='goToDingDocFunc("")'>
+        <div class="card border-0 rounded-0 mb-sm-0" onclick='goToDingDocFunc("pages/sign-docs.html")'>
           <img src="style/img/model.svg" class="card-img-top m-auto">
           <div class="card-body">
             <h5 class="card-title">Usar um modelo</h5>
@@ -119,7 +144,7 @@
       <!-- segunda linha -->
       <div class="d-flex flex-column flex-sm-row p-4 gap-4">
         <!-- assinaturas -->
-        <div class="card border-0 rounded-0 mb-sm-0" onclick='goToDingDocFunc("")'>
+        <div class="card border-0 rounded-0 mb-sm-0" onclick='goToDingDocFunc("pages/face-Id.html")'>
           <div class="d-flex justify-content-center gap-3">
             <img src="style/img/documents_signed.svg" class="card-img-top">
             <p class="ball-pink p-3 rounded-circle d-flex justify-content-center align-items-center">0</p>
@@ -131,7 +156,7 @@
         </div>
 
         <!-- assinaturas de terceitos -->
-        <div class="card border-0 rounded-0 mb-sm-0" onclick='goToDingDocFunc("")'>
+        <div class="card border-0 rounded-0 mb-sm-0" onclick='goToDingDocFunc("pages/tokenId.html")'>
           <div class="d-flex justify-content-center gap-3">
             <img src="style/img/documents_waiting.svg" class="card-img-top" alt="Documentos">
             <p class="ball-green p-3 rounded-circle d-flex justify-content-center align-items-center">0</p>
@@ -148,52 +173,69 @@
     <div class="rec_docs">
       <!-- title -->
       <h2 class="m-4">Documentos recentes</h1>
-        
-      <!-- reaload icon -->
-      <i class="bi bi-arrow-clockwise ms-5"></i>
 
-      <div class="container mt-5">
-        <table class="table table-borderless text-center align-middle">
-          <thead class="text-primary">
-            <tr>
-              <th>Documento</th>
-              <th>Origem</th>
-              <th>Grupos</th>
-              <th>Status</th>
-              <th>Assinatura</th>
-              <th>Criado em</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
+        <!-- reaload icon -->
+        <i class="bi bi-arrow-clockwise ms-5"></i>
+
+        <div class="container mt-5">
+          <table class="table table-borderless text-center align-middle">
+            <thead class="text-primary">
+              <tr>
+                <th>Documento</th>
+                <th>Origem</th>
+                <th>Grupos</th>
+                <th>Status</th>
+                <th>Assinatura</th>
+                <th>Criado em</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
     </div>
   </main>
 
   <!-- float button for help -->
   <footer class="d-flex flex-row-reverse fixed-bottom">
     <!-- open button -->
-    <button class="btn rounded-circle m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    <button class="btn rounded-circle m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight">
       <i class="bi bi-question-circle"></i>
     </button>
 
     <!-- offcanvas help -->
-    <div class="offcanvas offcanvas-end m-5 rounded-3" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end m-5 rounded-3" tabindex="-1" id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header offcanvas-header-2 rounded-top d-flex flex-column align-items-start p-5">
         <img src="style/img/Logo-LestSing.png" id="offcanvasRightLabel" class="label_help-title">
         <h3 class="my-2 mt-5">Olá Professor 👋</h3>
         <h4>Como podemos ajudar?</h4>
       </div>
       <div class="offcanvas-body-2">
-        
+
       </div>
       <div class="offcanvas-footer d-flex justify-content-center gap-3 p-3">
         <input type="text" placeholder="Digite sua pergunta" class="rounded-3 p-2">
-        <button class="p-2 rounded-3">
+        <button cla ss="p-2 rounded-3" onclick='goToDingDocFunc("/pages/voiceId.html")'>
           <i class="bi bi-send"></i>
         </button>
       </div>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Parabens! Você passou na verificação!</h5>
+        </div>
+        <div class="modal-body">
+          Muito obrigado por passar por esse processo. Todas as etapas servem para confirmar que é você mesmo. Assim, podemos ter certeza de que está tudo certo. Seu documento foi assinado com sucesso!
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- link pros js -->
@@ -201,6 +243,14 @@
   <script src="scripts/goToSingDocs.js"></script>
   <script src="scripts/bgMeneNavbar.js"></script>
   <script src="scripts/CacthTime.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (localStorage.getItem("mostrarModal") === "sim") {
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        myModal.show();
+      }
+    })
+  </script>
 
   <!-- js bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
